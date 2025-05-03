@@ -1,5 +1,7 @@
 # Technical Kata 01 - Web Development
-## Project Name: Candidate Portal
+## Project Name: 
+1. Candidate-Portal: For Frontend [https://github.com/jaindy/candidate-portal.git] 
+2. CandidateAPI: For Backend [https://github.com/jaindy/candidateAPI.git] 
 
 This project involves building a web application where users can input details such as their name, city, and year of joining. The app will have the following functionality:
 1. Input Form: Users can enter their name, city, and year of joining.
@@ -12,10 +14,11 @@ This project involves building a web application where users can input details s
 1. Frontend: React (with Vite for development)
 2. Backend: C# (ASP.NET Core Web API)
 3. Database: SQL Server
-4. API Security: API Key authentication
+4. API Security: API Key authentication using Middleware
 5. State Management: React's useState for state management
 6. API Testing: Configure Scalar
 7. Design Pattern: Repository Design pattern
+8. Code First Approch
 
 ## Functionality 
 
@@ -32,4 +35,34 @@ When the "Retrieve" button is clicked, a GET request is sent to fetch all the sa
 The backend API requires a valid API Key for both POST and GET requests.Configured proxy for sending the API key from frontend so that it will not display in the browser console. In the backend, added middleware to validate the API key.
 
 ## Flow of the Application
+1. Open the CandidateAPI project in Visual Studio and run the backend web services.
+2. Open the Candidate-Portal in VS Code and Run the React web application using "npm run dev" Command in terminal.
+3. Enter the Name, city and year in form field and click on save button.
+4. Click on retrieve button to fetch the stored data from DB.
+
 ## Screenshot
+1. Web application loaded sucessfully.
+   
+![First Page](/Images/HomeScreen.png)
+
+2. Try to save the data without entering any details to check if validations are working or not.
+   
+![Form Validation](/Images/formValidation.png)
+
+3. Enter the form fields and save the data, Data save successfully.
+![Save Data](/Images/SaveData.png)
+
+4. View the data by clicking on retrieve button, Data fetch successfully.
+![Retrieve Data](/Images/RetrieveData.png)
+
+5. API KEY should not be visible inside the browser console for security reason.
+   
+![BrowserConsole HeaderDetails](/Images/BrowserConsole_HeaderDetails.png)
+
+6. GET Request in openAPI scalar.
+![GET API](/Images/GETRequest.png)
+
+7. Post Request in openAPI scalar.
+![POST API](/Images/PostRequest.png)
+
+
