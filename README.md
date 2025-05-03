@@ -1,12 +1,35 @@
-# React + Vite
+# Technical Kata 01 - Web Development
+## Project Name: Candidate Portal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project involves building a web application where users can input details such as their name, city, and year of joining. The app will have the following functionality:
+1. Input Form: Users can enter their name, city, and year of joining.
+2. Constraints on Year: The year field will have a constraint to limit the entry to the last 5 years.
+3. Save and Retrieve Data: The data will be saved to a database through a RESTful API using C#. The data can be retrieved using a GET request.
+4. API Security: The web service will require an API key for authentication.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Frontend: React (with Vite for development)
+2. Backend: C# (ASP.NET Core Web API)
+3. Database: SQL Server
+4. API Security: API Key authentication
+5. State Management: React's useState for state management
+6. API Testing: Configure Scalar
+7. Design Pattern: Repository Design pattern
 
-## Expanding the ESLint configuration
+## Functionality 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Web App Form:
+This form enables users to input their name, city, and year of joining. Frontend-side form validation is implemented, while data annotations are used on the backend for validation. Used OpenAPI to test the WEB API functionality. Implemented global Exception to handle the exception.
+
+2. Save Data (Used axios for making POST Request): 
+When the "Save" button is clicked, the form data is sent to the backend API via a POST request. The backend API saves the data into a SQL database.
+
+3. Retrieve Data (Used axios for making GET Request):
+When the "Retrieve" button is clicked, a GET request is sent to fetch all the saved data from the database. The data is displayed in a list on the frontend 5 entry per page. 
+
+4. API Key Authentication:
+The backend API requires a valid API Key for both POST and GET requests.Configured proxy for sending the API key from frontend so that it will not display in the browser console. In the backend, added middleware to validate the API key.
+
+## Flow of the Application
+## Screenshot
