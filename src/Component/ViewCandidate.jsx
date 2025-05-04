@@ -11,14 +11,12 @@ const ViewCandidate=({refreshFlag }) =>{
 useEffect(() => {
   const fetchCandidates = async () => {
     try {
-   //  const response = await axios.get('/api/Candidate',{ cache: 'no-store' }); 
-   const response = await axios.get('https://localhost:4431/api/Candidate',{ cache: 'no-store' ,
+    const response = await axios.get('/api/Candidate',{ cache: 'no-store' }); 
+   /*const response = await axios.get('https://localhost:4431/api/Candidate',{ cache: 'no-store' ,
     headers:{
       'xApiKey': 'c0e67c79-e208-42da-a8d5-5fc5e279c419',
     },
-
-
-   }); 
+   }); */
 
       setCandidates(response.data);
       setCurrentPage(1);
