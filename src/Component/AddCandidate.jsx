@@ -85,7 +85,7 @@ function AddCandidate() {
     }
 
     try {
-      const res = await axios.post('/api/Candidate', { //${API_URL}/api/Candidate`, {
+      const res = await axios.post('/api/Candidate', { 
         firstName,
         cityName,
         yearOfJoining,
