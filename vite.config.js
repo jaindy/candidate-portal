@@ -6,18 +6,22 @@ export default defineConfig({
 
   plugins: [react()],
   base:"/candidate-portal",
+  
   server:{
     proxy: {
       '/api': {
-        target: 'https://localhost:7050',
+        target: 'https://localhost:4431',
         changeOrigin: true,
         secure: false, // Allows self-signed certs
         headers:{
           'xApiKey': 'c0e67c79-e208-42da-a8d5-5fc5e279c419',
-        }
+        },
+        
+       
       },
     },
   }
+  
 })
 
 
