@@ -1,5 +1,5 @@
 # Technical Kata 01 - Web Development
-## Project Name: 
+## Project Deatils: 
 1. Candidate-Portal: For Frontend [https://github.com/jaindy/candidate-portal.git] 
 2. CandidateAPI: For Backend [https://github.com/jaindy/candidateAPI.git] 
 
