@@ -11,7 +11,9 @@ const ViewCandidate=({refreshFlag }) =>{
 useEffect(() => {
   const fetchCandidates = async () => {
     try {
-     const response = await axios.get('/api/Candidate',{ cache: 'no-store' }); 
+   //  const response = await axios.get('/api/Candidate',{ cache: 'no-store' }); 
+   const response = await axios.get('https://localhost:4431/api/Candidate',{ cache: 'no-store' }); 
+
       setCandidates(response.data);
       setCurrentPage(1);
 
